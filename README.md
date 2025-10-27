@@ -1,7 +1,9 @@
 # End to end security of a web application
 
-[![.NET and npm build](https://github.com/damienbod/EndToEndSecurity/actions/workflows/dotnet.yml/badge.svg)](https://github.com/damienbod/EndToEndSecurity/actions/workflows/dotnet.yml)
-[![SonarCloud](https://github.com/damienbod/EndToEndSecurity/actions/workflows/sonarbuild.yml/badge.svg)](https://github.com/damienbod/EndToEndSecurity/actions/workflows/sonarbuild.yml)
+[![License](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg)](https://github.com/secure-web-apps/EndToEndSecurity/blob/main/LICENSE)
+
+[![.NET and npm build](https://github.com/secure-web-apps/EndToEndSecurity/actions/workflows/dotnet.yml/badge.svg)](https://github.com/secure-web-apps/EndToEndSecurity/actions/workflows/dotnet.yml)
+[![SonarCloud](https://github.com/secure-web-apps/EndToEndSecurity/actions/workflows/sonarbuild.yml/badge.svg)](https://github.com/secure-web-apps/EndToEndSecurity/actions/workflows/sonarbuild.yml)
 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=damienbod_EndToEndSecurity&metric=alert_status)](https://sonarcloud.io/summary/overall?id=damienbod_EndToEndSecurity)
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=damienbod_EndToEndSecurity&metric=bugs)](https://sonarcloud.io/summary/overall?id=damienbod_EndToEndSecurity)

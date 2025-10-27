@@ -1,25 +1,23 @@
 # End to end security of a web application
 
-[![License](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg)](https://github.com/secure-web-apps/EndToEndSecurity/blob/main/LICENSE)
+[![License](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg)](https://github.com/secure-web-apps/EndToEndSecurityWeb/blob/main/LICENSE)
 
-[![.NET and npm build](https://github.com/secure-web-apps/EndToEndSecurity/actions/workflows/dotnet.yml/badge.svg)](https://github.com/secure-web-apps/EndToEndSecurity/actions/workflows/dotnet.yml)
-[![SonarCloud](https://github.com/secure-web-apps/EndToEndSecurity/actions/workflows/sonarbuild.yml/badge.svg)](https://github.com/secure-web-apps/EndToEndSecurity/actions/workflows/sonarbuild.yml)
+[![.NET and npm build](https://github.com/secure-web-apps/EndToEndSecurityWeb/actions/workflows/dotnet-and-npm.yml/badge.svg)](https://github.com/secure-web-apps/EndToEndSecurityWeb/actions/workflows/dotnet-and-npm.yml)
+[![SonarCloud](https://github.com/secure-web-apps/EndToEndSecurityWeb/actions/workflows/quality.yml/badge.svg)](https://github.com/secure-web-apps/EndToEndSecurityWeb/actions/workflows/quality.yml)
 
-TODO: update badge URLs
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=secure-web-apps_EndToEndSecurityWeb&metric=alert_status&token=0d4ca287da2bcdd568de817048e1ff5ee611afe0)](https://sonarcloud.io/summary/overall?id=secure-web-apps_EndToEndSecurityWeb)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=secure-web-apps_EndToEndSecurityWeb&metric=bugs&token=0d4ca287da2bcdd568de817048e1ff5ee611afe0)](https://sonarcloud.io/summary/overall?id=secure-web-apps_EndToEndSecurityWeb)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=secure-web-apps_EndToEndSecurityWeb&metric=code_smells&token=0d4ca287da2bcdd568de817048e1ff5ee611afe0)](https://sonarcloud.io/summary/overall?id=secure-web-apps_EndToEndSecurityWeb)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=secure-web-apps_EndToEndSecurityWeb&metric=coverage&token=0d4ca287da2bcdd568de817048e1ff5ee611afe0)](https://sonarcloud.io/summary/overall?id=secure-web-apps_EndToEndSecurityWeb)
+[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=secure-web-apps_EndToEndSecurityWeb&metric=duplicated_lines_density&token=0d4ca287da2bcdd568de817048e1ff5ee611afe0)](https://sonarcloud.io/summary/overall?id=secure-web-apps_EndToEndSecurityWeb)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=secure-web-apps_EndToEndSecurityWeb&metric=ncloc&token=0d4ca287da2bcdd568de817048e1ff5ee611afe0)](https://sonarcloud.io/summary/overall?id=secure-web-apps_EndToEndSecurityWeb)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=secure-web-apps_EndToEndSecurityWeb&metric=reliability_rating&token=0d4ca287da2bcdd568de817048e1ff5ee611afe0)](https://sonarcloud.io/summary/overall?id=secure-web-apps_EndToEndSecurityWeb)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=secure-web-apps_EndToEndSecurityWeb&metric=security_rating&token=0d4ca287da2bcdd568de817048e1ff5ee611afe0)](https://sonarcloud.io/summary/overall?id=secure-web-apps_EndToEndSecurityWeb)
+[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=secure-web-apps_EndToEndSecurityWeb&metric=sqale_index&token=0d4ca287da2bcdd568de817048e1ff5ee611afe0)](https://sonarcloud.io/summary/overall?id=secure-web-apps_EndToEndSecurityWeb)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=secure-web-apps_EndToEndSecurityWeb&metric=sqale_rating&token=0d4ca287da2bcdd568de817048e1ff5ee611afe0)](https://sonarcloud.io/summary/overall?id=secure-web-apps_EndToEndSecurityWeb)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=secure-web-apps_EndToEndSecurityWeb&metric=vulnerabilities&token=0d4ca287da2bcdd568de817048e1ff5ee611afe0)](https://sonarcloud.io/summary/overall?id=secure-web-apps_EndToEndSecurityWeb)
 
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=damienbod_EndToEndSecurity&metric=alert_status)](https://sonarcloud.io/summary/overall?id=damienbod_EndToEndSecurity)
-[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=damienbod_EndToEndSecurity&metric=bugs)](https://sonarcloud.io/summary/overall?id=damienbod_EndToEndSecurity)
-[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=damienbod_EndToEndSecurity&metric=code_smells)](https://sonarcloud.io/summary/overall?id=damienbod_EndToEndSecurity)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=damienbod_EndToEndSecurity&metric=coverage)](https://sonarcloud.io/summary/overall?id=damienbod_EndToEndSecurity)
-[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=damienbod_EndToEndSecurity&metric=duplicated_lines_density)](https://sonarcloud.io/summary/overall?id=damienbod_EndToEndSecurity)
-[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=damienbod_EndToEndSecurity&metric=ncloc)](https://sonarcloud.io/summary/overall?id=damienbod_EndToEndSecurity)
-[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=damienbod_EndToEndSecurity&metric=reliability_rating)](https://sonarcloud.io/summary/overall?id=damienbod_EndToEndSecurity)
-[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=damienbod_EndToEndSecurity&metric=security_rating)](https://sonarcloud.io/summary/overall?id=damienbod_EndToEndSecurity)
-[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=damienbod_EndToEndSecurity&metric=sqale_index)](https://sonarcloud.io/summary/overall?id=damienbod_EndToEndSecurity)
-[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=damienbod_EndToEndSecurity&metric=sqale_rating)](https://sonarcloud.io/summary/overall?id=damienbod_EndToEndSecurity)
-[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=damienbod_EndToEndSecurity&metric=vulnerabilities)](https://sonarcloud.io/summary/overall?id=damienbod_EndToEndSecurity)
-
-This repository is used to host the source code for our .NET User Group Switzerland tour.
+This repository hosts the source code for our .NET User Group Switzerland tour.
 
 ## Introduction
 
@@ -29,49 +27,39 @@ This repository is used to host the source code for our .NET User Group Switzerl
 
 ## Setup and docs
 
-https://github.com/damienbod/bff-aspnetcore-angular
+[ASP.NET Core/Angular](https://github.com/damienbod/bff-aspnetcore-angular)
 
 ![BFF production](https://github.com/damienbod/EndToEndSecurity/blob/main/images/bff-arch-production_01.png)
 
 ## Agenda
 
-- User authentication
-- Identity authentication
-- Secure APIs
-- Session security
-- DevSecOps
-
-// CONTINUE HERE
-
-- Application setup development/production
-  - [ASP.NET Core/Angular](https://github.com/damienbod/bff-aspnetcore-angular)
-  - Secrets
-- Authentication
+- User Authentication
+- Identity Authentication
   - [OpenID Connect Code flow confidential client](https://github.com/damienbod/EndToEndSecurity/blob/main/images/OIDC%20Code%20flow.md)
   - [PKCE](https://github.com/damienbod/EndToEndSecurity/blob/main/images/PKCE.md)
-- Microsoft Entra ID
-  - Microsoft.Identity.Web
-  - Microsoft Graph 5 for profile data
-  - Profile data in UI (UserController)
-- Session protection
-- CI/CD
-  - [build](.github/workflows/dotnet.yml)
+  - Microsoft Entra ID
+    - `Microsoft.Identity.Web`
+    - Microsoft Graph 5 for profile data
+    - Profile data in UI (UserController)
+- Secure APIs
+- Session Security
+- DevSecOps
+  - [build](.github/workflows/dotnet-and-npm.yml)
   - [deployment](.github/workflows/azure-webapps-dotnet-core.yml)
-- CI/CD Quality (SonarCloud)
-  - [quality (SonarCloud and github actions)](.github/workflows/sonarbuild.yml)
+  - [quality (SonarCloud and github actions)](.github/workflows/quality.yml)
   - Analysis for different technical stacks (.csproj)
   - sonar badges, build badges
 
 ## Other topics
 
-- What's missing for a productive setup?
-  - infrastructure automation (terraform/biceps)
+- What's missing for a production setup?
+  - infrastructure automation (terraform/bicep)
   - authorization
   - data requirements
 
 ## Angular nx Updates
 
-```
+```cmd
 nx migrate latest
 
 nx migrate --run-migrations=migrations.json
@@ -83,21 +71,15 @@ nx migrate --run-migrations=migrations.json
 - 2025-01-01 .NET 9, Angular 19
 - 2024-10-17 Updated security headers performance, updated packages
 - 2024-10-06 Updated Angular 18.2.7, Updated security headers
+- 2025-10-27 Updated NuGet packages
 
 ## Links
 
-https://docs.sonarsource.com/sonarcloud/getting-started/github/
-
-https://github.com/rufer7/github-sonarcloud-integration
-
-https://blog.rufer.be/2023/10/06/howto-integrate-sonarcloud-analysis-in-an-azure-devops-yaml-pipeline/
-
-https://community.sonarsource.com/t/code-coverage-report-for-net-not-working-on-linux-agent/62087
-
-https://docs.sonarsource.com/sonarcloud/advanced-setup/ci-based-analysis/sonarscanner-for-net/#analyzing-languages-other-than-c-and-vb
-
-https://andreiepure.ro/2023/08/20/analyze-web-files-with-s4net.html
-
-https://github.com/damienbod/bff-aspnetcore-angular
-
-https://community.sonarsource.com/t/webinar-end-to-end-security-in-a-web-application/115405
+- [SonarQube Cloud - Analyzing GitHub projects](https://docs.sonarsource.com/sonarcloud/getting-started/github/)
+- [rufer7 - github-sonarcloud-integration](https://github.com/rufer7/github-sonarcloud-integration)
+- [[HOWTO] Integrate SonarCloud analysis in an Azure DevOps YAML pipeline](https://blog.rufer.be/2023/10/06/howto-integrate-sonarcloud-analysis-in-an-azure-devops-yaml-pipeline/)
+- [Sonar Community - Code coverage report for .Net not working on Linux agent](https://community.sonarsource.com/t/code-coverage-report-for-net-not-working-on-linux-agent/62087)
+- [SonarScanner for .NET - Analyzing languages other than C# and VB](https://docs.sonarsource.com/sonarcloud/advanced-setup/ci-based-analysis/sonarscanner-for-net/#analyzing-languages-other-than-c-and-vb)
+- [Andrei Epure - How to analyze JS/TS, HTML and CSS files with the Sonar Scanner for .NET](https://andreiepure.ro/2023/08/20/analyze-web-files-with-s4net.html)
+- [damienbod - bff-aspnetcore-angular](https://github.com/damienbod/bff-aspnetcore-angular)
+- [[Webinar] End-to-end security in a web application](https://community.sonarsource.com/t/webinar-end-to-end-security-in-a-web-application/115405)

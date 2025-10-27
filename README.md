@@ -5,6 +5,8 @@
 [![.NET and npm build](https://github.com/secure-web-apps/EndToEndSecurity/actions/workflows/dotnet.yml/badge.svg)](https://github.com/secure-web-apps/EndToEndSecurity/actions/workflows/dotnet.yml)
 [![SonarCloud](https://github.com/secure-web-apps/EndToEndSecurity/actions/workflows/sonarbuild.yml/badge.svg)](https://github.com/secure-web-apps/EndToEndSecurity/actions/workflows/sonarbuild.yml)
 
+TODO: update badge URLs
+
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=damienbod_EndToEndSecurity&metric=alert_status)](https://sonarcloud.io/summary/overall?id=damienbod_EndToEndSecurity)
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=damienbod_EndToEndSecurity&metric=bugs)](https://sonarcloud.io/summary/overall?id=damienbod_EndToEndSecurity)
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=damienbod_EndToEndSecurity&metric=code_smells)](https://sonarcloud.io/summary/overall?id=damienbod_EndToEndSecurity)
@@ -19,7 +21,7 @@
 
 This repository is used to host the source code for our .NET User Group Switzerland tour.
 
-## Getting started
+## Introduction
 
 :memo: [Using SonarCloud with ASP.NET Core, Angular and github actions](https://damienbod.com/2024/05/13/using-sonarcloud-with-asp-net-core-angular-and-github-actions/)
 
@@ -31,33 +33,41 @@ https://github.com/damienbod/bff-aspnetcore-angular
 
 ![BFF production](https://github.com/damienbod/EndToEndSecurity/blob/main/images/bff-arch-production_01.png)
 
-## Webinar Agenda
+## Agenda
 
-- Application setup development/production 
-	- [ASP.NET Core/Angular](https://github.com/damienbod/bff-aspnetcore-angular)
-	- Secrets
+- User authentication
+- Identity authentication
+- Secure APIs
+- Session security
+- DevSecOps
+
+// CONTINUE HERE
+
+- Application setup development/production
+  - [ASP.NET Core/Angular](https://github.com/damienbod/bff-aspnetcore-angular)
+  - Secrets
 - Authentication
-	- [OpenID Connect Code flow confidential client](https://github.com/damienbod/EndToEndSecurity/blob/main/images/OIDC%20Code%20flow.md)
-	- [PKCE](https://github.com/damienbod/EndToEndSecurity/blob/main/images/PKCE.md)
-- Microsoft Entra ID 
-	- Microsoft.Identity.Web
-	- Microsoft Graph 5 for profile data
-	- Profile data in UI (UserController)
+  - [OpenID Connect Code flow confidential client](https://github.com/damienbod/EndToEndSecurity/blob/main/images/OIDC%20Code%20flow.md)
+  - [PKCE](https://github.com/damienbod/EndToEndSecurity/blob/main/images/PKCE.md)
+- Microsoft Entra ID
+  - Microsoft.Identity.Web
+  - Microsoft Graph 5 for profile data
+  - Profile data in UI (UserController)
 - Session protection
-- CI/CD 
-	- [build](.github/workflows/dotnet.yml)
-	- [deployment](.github/workflows/azure-webapps-dotnet-core.yml)
+- CI/CD
+  - [build](.github/workflows/dotnet.yml)
+  - [deployment](.github/workflows/azure-webapps-dotnet-core.yml)
 - CI/CD Quality (SonarCloud)
-	- [quality (SonarCloud and github actions)](.github/workflows/sonarbuild.yml)
-	- Analysis for different technical stacks (.csproj)
-	- sonar badges, build badges
+  - [quality (SonarCloud and github actions)](.github/workflows/sonarbuild.yml)
+  - Analysis for different technical stacks (.csproj)
+  - sonar badges, build badges
 
 ## Other topics
 
 - What's missing for a productive setup?
-	- infrastructure automation (terraform/biceps)
-	- authorization
-	- data requirements
+  - infrastructure automation (terraform/biceps)
+  - authorization
+  - data requirements
 
 ## Angular nx Updates
 
@@ -70,14 +80,14 @@ nx migrate --run-migrations=migrations.json
 ## History
 
 - 2025-08-30 Updated packages, Angular 20
-- 2025-01-01 .NET 9, Angular 19 
+- 2025-01-01 .NET 9, Angular 19
 - 2024-10-17 Updated security headers performance, updated packages
 - 2024-10-06 Updated Angular 18.2.7, Updated security headers
 
 ## Links
 
 https://docs.sonarsource.com/sonarcloud/getting-started/github/
-  
+
 https://github.com/rufer7/github-sonarcloud-integration
 
 https://blog.rufer.be/2023/10/06/howto-integrate-sonarcloud-analysis-in-an-azure-devops-yaml-pipeline/

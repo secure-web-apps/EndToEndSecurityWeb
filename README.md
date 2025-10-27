@@ -17,11 +17,13 @@
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=damienbod_EndToEndSecurity&metric=sqale_rating)](https://sonarcloud.io/summary/overall?id=damienbod_EndToEndSecurity)
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=damienbod_EndToEndSecurity&metric=vulnerabilities)](https://sonarcloud.io/summary/overall?id=damienbod_EndToEndSecurity)
 
-[Using SonarCloud with ASP.NET Core, Angular and github actions](https://damienbod.com/2024/05/13/using-sonarcloud-with-asp-net-core-angular-and-github-actions/)
+This repository is used to host the source code for our .NET User Group Switzerland tour.
 
-Webinar:
+## Getting started
 
-https://www.youtube.com/watch?v=6cdV-oN_Yao
+:memo: [Using SonarCloud with ASP.NET Core, Angular and github actions](https://damienbod.com/2024/05/13/using-sonarcloud-with-asp-net-core-angular-and-github-actions/)
+
+:tv: [Webinar](https://www.youtube.com/watch?v=6cdV-oN_Yao)
 
 ## Setup and docs
 

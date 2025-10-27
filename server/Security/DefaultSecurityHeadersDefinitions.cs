@@ -1,18 +1,21 @@
-﻿namespace BffMicrosoftEntraID.Server;
+﻿namespace BffMicrosoftEntraID.Server.Security;
 
-public static class SecurityHeadersDefinitions
+public static class DefaultSecurityHeadersDefinitions
 {
-    private static HeaderPolicyCollection? policy;
+    private static HeaderPolicyCollection? _policy;
 
     public static HeaderPolicyCollection GetHeaderPolicyCollection(bool isDev, string? idpHost)
     {
-        ArgumentNullException.ThrowIfNull(idpHost);
+        ArgumentNullException.ThrowIfNullOrWhiteSpace(idpHost);
 
         // Avoid building a new HeaderPolicyCollection on every request for performance reasons.
         // Where possible, cache and reuse HeaderPolicyCollection instances.
-        if (policy != null) return policy;
+        if (_policy is not null)
+        {
+            return _policy;
+        }
 
-        policy = new HeaderPolicyCollection()
+        _policy = new HeaderPolicyCollection()
             .AddFrameOptionsDeny()
             .AddContentTypeOptionsNoSniff()
             .AddReferrerPolicyStrictOriginWhenCrossOrigin()
@@ -45,10 +48,10 @@ public static class SecurityHeadersDefinitions
 
         if (!isDev)
         {
-            // maxage = one year in seconds
-            policy.AddStrictTransportSecurityMaxAgeIncludeSubDomains(maxAgeInSeconds: 60 * 60 * 24 * 365);
+            // max-age = one year in seconds
+            _policy.AddStrictTransportSecurityMaxAgeIncludeSubDomainsAndPreload();
         }
 
-        return policy;
+        return _policy;
     }
 }

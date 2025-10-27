@@ -1,4 +1,4 @@
-﻿namespace BlazorBffOpenIDConnect.Server.Controllers;
+﻿namespace BffMicrosoftEntraID.Server.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
@@ -39,9 +39,10 @@ public class UserController : ControllerBase
                                         .Select(u => new ClaimValue(userInfo.NameClaimType, u.Value))
                                         .ToList();
 
-            // Uncomment this code if you want to send additional claims to the client.
-            //var claims = claimsPrincipal.Claims.Select(u => new ClaimValue(u.Type, u.Value))
-            //                                      .ToList();
+            // Uncomment this code if you want to send additional claims to the client
+            //claims.AddRange(claimsPrincipal.Claims
+            //    .Select(u => new ClaimValue(u.Type, u.Value))
+            //    .ToList());
 
             userInfo.Claims = claims;
         }

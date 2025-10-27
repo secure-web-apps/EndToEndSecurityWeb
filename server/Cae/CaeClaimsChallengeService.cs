@@ -1,4 +1,4 @@
-﻿namespace BffMicrosoftEntraID.Server;
+﻿namespace BffMicrosoftEntraID.Server.Cae;
 
 /// <summary>
 /// Claims challenges, claims requests, and client capabilities
@@ -12,7 +12,7 @@
 /// </summary>
 public class CaeClaimsChallengeService
 {
-    public string? CheckForRequiredAuthContextIdToken(string authContextId, HttpContext context)
+    public static string? CheckForRequiredAuthContextIdToken(string authContextId, HttpContext context)
     {
         if (!string.IsNullOrEmpty(authContextId))
         {

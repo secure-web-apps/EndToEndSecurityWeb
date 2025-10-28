@@ -400,3 +400,4 @@ FodyWeavers.xsd
 # Sonar
 # Avoid error message "There were errors in the dependency analysis" on the "Dependencies" tab in SoanrQube Cloud due to inclusion of scanner directory
 .sonar/*
+scanner/*

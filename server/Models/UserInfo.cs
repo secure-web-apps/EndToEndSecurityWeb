@@ -10,5 +10,5 @@ public class UserInfo
 
     public string RoleClaimType { get; set; } = string.Empty;
 
-    public ICollection<ClaimValue> Claims { get; set; } = new List<ClaimValue>();
+    public ICollection<ClaimValue> Claims { get; set; } = [];
 }

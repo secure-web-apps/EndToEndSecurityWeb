@@ -9,6 +9,6 @@ public class DirectApiController : ControllerBase
     [HttpGet]
     public IEnumerable<string> Get()
     {
-        return new List<string> { "some data", "more data", "loads of data" };
+        return ["some data", "more data", "loads of data"];
     }
 }

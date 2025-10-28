@@ -29,14 +29,14 @@ This repository hosts the source code for our .NET User Group Switzerland tour.
 
 [ASP.NET Core/Angular](https://github.com/damienbod/bff-aspnetcore-angular)
 
-![BFF production](https://github.com/damienbod/EndToEndSecurity/blob/main/images/bff-arch-production_01.png)
+![BFF production](https://github.com/secure-web-apps/EndToEndSecurityWeb/blob/main/images/bff-arch-production_01.png)
 
 ## Agenda
 
 - User Authentication
 - Identity Authentication
-  - [OpenID Connect Code flow confidential client](https://github.com/damienbod/EndToEndSecurity/blob/main/images/OIDC%20Code%20flow.md)
-  - [PKCE](https://github.com/damienbod/EndToEndSecurity/blob/main/images/PKCE.md)
+  - [OpenID Connect Code flow confidential client](https://github.com/secure-web-apps/EndToEndSecurityWeb/blob/main/images/OIDC%20Code%20flow.md)
+  - [PKCE](https://github.com/secure-web-apps/EndToEndSecurityWeb/blob/main/images/PKCE.md)
   - Microsoft Entra ID
     - `Microsoft.Identity.Web`
     - Microsoft Graph 5 for profile data
@@ -72,6 +72,7 @@ nx migrate --run-migrations=migrations.json
 - 2024-10-17 Updated security headers performance, updated packages
 - 2024-10-06 Updated Angular 18.2.7, Updated security headers
 - 2025-10-27 Updated NuGet packages
+- 2025-10-28 Updated frontend packages, added integration tests, added GitHub Actions workflows
 
 ## Links
 

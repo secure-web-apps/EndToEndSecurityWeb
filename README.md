@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg)](https://github.com/secure-web-apps/EndToEndSecurityWeb/blob/main/LICENSE)
 
-[![.NET and npm build](https://github.com/secure-web-apps/EndToEndSecurityWeb/actions/workflows/dotnet-and-npm.yml/badge.svg)](https://github.com/secure-web-apps/EndToEndSecurityWeb/actions/workflows/dotnet-and-npm.yml)
+[![.NET and npm build](https://github.com/secure-web-apps/EndToEndSecurityWeb/actions/workflows/dotnet-and-npm-build.yml/badge.svg)](https://github.com/secure-web-apps/EndToEndSecurityWeb/actions/workflows/dotnet-and-npm-build.yml)
 [![SonarCloud](https://github.com/secure-web-apps/EndToEndSecurityWeb/actions/workflows/quality.yml/badge.svg)](https://github.com/secure-web-apps/EndToEndSecurityWeb/actions/workflows/quality.yml)
 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=secure-web-apps_EndToEndSecurityWeb&metric=alert_status&token=0d4ca287da2bcdd568de817048e1ff5ee611afe0)](https://sonarcloud.io/summary/overall?id=secure-web-apps_EndToEndSecurityWeb)
@@ -44,7 +44,7 @@ This repository hosts the source code for our .NET User Group Switzerland tour.
 - Secure APIs
 - Session Security
 - DevSecOps
-  - [build](.github/workflows/dotnet-and-npm.yml)
+  - [build](.github/workflows/dotnet-and-npm-build.yml)
   - [deployment](.github/workflows/azure-webapps-dotnet-core.yml)
   - [quality (SonarCloud and github actions)](.github/workflows/quality.yml)
   - Analysis for different technical stacks (.csproj)

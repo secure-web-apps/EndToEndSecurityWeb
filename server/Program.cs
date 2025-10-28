@@ -108,3 +108,11 @@ if (app.Environment.IsDevelopment())
 app.MapFallbackToPage("/_Host");
 
 await app.RunAsync();
+
+/// <summary>
+/// Expose implicitly defined Program class to the integration test project
+/// See https://learn.microsoft.com/en-us/aspnet/core/test/integration-tests?view=aspnetcore-9.0&pivots=xunit&WT.mc_id=MVP_344197#basic-tests-with-the-default-webapplicationfactory
+/// </summary>
+#pragma warning disable S1118 // Utility classes should not have public constructors
+public partial class Program { }
+#pragma warning restore S1118 // Utility classes should not have public constructors

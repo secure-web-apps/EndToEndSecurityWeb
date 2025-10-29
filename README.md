@@ -84,3 +84,4 @@ nx migrate --run-migrations=migrations.json
 - [Andrei Epure - How to analyze JS/TS, HTML and CSS files with the Sonar Scanner for .NET](https://andreiepure.ro/2023/08/20/analyze-web-files-with-s4net.html)
 - [damienbod - bff-aspnetcore-angular](https://github.com/damienbod/bff-aspnetcore-angular)
 - [[Webinar] End-to-end security in a web application](https://community.sonarsource.com/t/webinar-end-to-end-security-in-a-web-application/115405)
+- [Tutorial: Add Aspire to an existing .NET app](https://learn.microsoft.com/en-us/dotnet/aspire/get-started/add-aspire-existing-app?WT.mc_id=MVP_344197)

@@ -1,0 +1,9 @@
+tenant_id             = "00000000-0000-0000-0000-000000000000"
+subscription_id       = "00000000-0000-0000-0000-000000000000"
+resource_prefix       = "e2e-security-web"
+resource_prefix_short = "e2esecweb"
+default_location      = "switzerlandnorth"
+stage                 = "dev"
+app_worker_count      = 1
+app_sku_name          = "F1"
+custom_domain_name    = ""

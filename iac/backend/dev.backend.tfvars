@@ -1,0 +1,7 @@
+tenant_id            = "00000000-0000-0000-0000-000000000000"
+subscription_id      = "00000000-0000-0000-0000-000000000000"
+resource_group_name  = "e2e-security-web-rg-iac"
+storage_account_name = "storiac03"
+container_name       = "tfstate"
+key                  = "e2e-security-web.tfstate"
+use_azuread_auth     = "true"

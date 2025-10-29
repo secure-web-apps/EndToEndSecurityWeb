@@ -15,7 +15,6 @@ if (builder.Environment.IsDevelopment())
 }
 else
 {
-
     builder.AddProject<Projects.BffMicrosoftEntraID_Server>("bffmicrosoftentraid-server")
         .WithExternalHttpEndpoints();
 }

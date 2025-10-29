@@ -85,3 +85,4 @@ nx migrate --run-migrations=migrations.json
 - [damienbod - bff-aspnetcore-angular](https://github.com/damienbod/bff-aspnetcore-angular)
 - [[Webinar] End-to-end security in a web application](https://community.sonarsource.com/t/webinar-end-to-end-security-in-a-web-application/115405)
 - [Tutorial: Add Aspire to an existing .NET app](https://learn.microsoft.com/en-us/dotnet/aspire/get-started/add-aspire-existing-app?WT.mc_id=MVP_344197)
+- [Orchestrate Node.js apps in Aspire](https://learn.microsoft.com/en-us/dotnet/aspire/get-started/build-aspire-apps-with-nodejs?WT.mc_id=MVP_344197)

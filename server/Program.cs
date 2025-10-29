@@ -1,8 +1,10 @@
-﻿using BffMicrosoftEntraID.Server.Cae;
+using BffMicrosoftEntraID.Server.Cae;
 using BffMicrosoftEntraID.Server.Security;
 using NetEscapades.AspNetCore.SecurityHeaders.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.AddServiceDefaults();
 
 builder.WebHost.ConfigureKestrel(serverOptions =>
 {
@@ -66,6 +68,8 @@ services.AddReverseProxy()
         .LoadFromConfig(builder.Configuration.GetSection("ReverseProxy"));
 
 var app = builder.Build();
+
+app.MapDefaultEndpoints();
 
 if (app.Environment.IsDevelopment())
 {

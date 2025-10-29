@@ -6,7 +6,7 @@
 - [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli?WT.mc_id=MVP_344197)
 - [Terraform 1.13.3](https://developer.hashicorp.com/terraform/install?product_intent=terraform)
 
-### Deploy resources to host terraform state
+## Deploy resources to host terraform state
 
 1. Adjust values in `iac-core\vars\dev.core.tfvars`
 1. Create resources to host terraform state by executing the following commands

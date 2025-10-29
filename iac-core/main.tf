@@ -24,7 +24,7 @@ resource "azuread_group" "group-rg-contributor" {
 # Storage Account
 resource "azurerm_storage_account" "sa" {
   resource_group_name             = azurerm_resource_group.rg.name
-  name                            = format("%s02", "storiac")
+  name                            = format("%s03", "storiac")
   location                        = var.default_location
   account_tier                    = "Standard"
   account_replication_type        = "GRS"

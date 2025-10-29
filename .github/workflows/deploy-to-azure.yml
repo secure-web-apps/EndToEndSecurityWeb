@@ -10,7 +10,7 @@ permissions:
   contents: read
 
 env:
-  AZURE_WEBAPP_NAME: e2e-web-security-appsrv-dev # set this to the name of your Azure App Service
+  AZURE_WEBAPP_NAME: e2e-security-web-appsrv-dev # set this to the name of your Azure App Service
   AZURE_WEBAPP_PACKAGE_PATH: "." # set this to the path to your web app project, defaults to the repository root
   DOTNET_VERSION: "9.0.x" # set this to the .NET Core version to use
   TERRAFORM_VERSION: "1.13.3"
@@ -138,5 +138,5 @@ jobs:
         uses: azure/webapps-deploy@v3
         with:
           app-name: ${{ env.AZURE_WEBAPP_NAME }}
-          resource-group-name: e2e-web-security-rg-dev
+          resource-group-name: e2e-security-web-rg-dev
           package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}

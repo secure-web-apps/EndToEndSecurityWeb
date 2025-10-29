@@ -45,8 +45,8 @@ This repository hosts the source code for our .NET User Group Switzerland tour.
 - Session Security
 - DevSecOps
   - [build](.github/workflows/dotnet-and-npm-build.yml)
-  - [deployment](.github/workflows/azure-webapps-dotnet-core.yml)
-  - [quality (SonarCloud and github actions)](.github/workflows/quality.yml)
+  - [deploy (IaC & app)](.github/workflows/deploy-to-azure.yml)
+  - [quality (SonarQube Cloud)](.github/workflows/quality.yml)
   - Analysis for different technical stacks (.csproj)
   - sonar badges, build badges
 

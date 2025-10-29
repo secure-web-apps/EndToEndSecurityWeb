@@ -10,8 +10,8 @@ permissions:
   contents: read
 
 env:
+  AZURE_WEBAPP_PACKAGE_PATH: "./app.zip"
   AZURE_WEBAPP_NAME: e2e-security-web-appsrv-dev # set this to the name of your Azure App Service
-  AZURE_WEBAPP_PACKAGE_PATH: "." # set this to the path to your web app project, defaults to the repository root
   DOTNET_VERSION: "9.0.x" # set this to the .NET Core version to use
   TERRAFORM_VERSION: "1.13.3"
   TERRAFORM_ROOT_DIRECTORY: "./iac"
@@ -51,13 +51,19 @@ jobs:
         run: dotnet build --configuration Release
 
       - name: dotnet publish
-        run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
+        run: dotnet publish -c Release -o  --output ./temp
+
+      - name: Create Zip
+        shell: pwsh
+        run: |
+          cd ./temp
+          zip -r ../app.zip ./*
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
-          name: .net-app
-          path: ${{env.DOTNET_ROOT}}/myapp
+          name: dotnet-app
+          path: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
 
   iac_plan:
     name: IaC (Terraform) Plan
@@ -125,7 +131,7 @@ jobs:
       - name: Download artifact from build job
         uses: actions/download-artifact@v4
         with:
-          name: .net-app
+          name: dotnet-app
 
       - uses: azure/login@v2
         with:
@@ -139,4 +145,4 @@ jobs:
         with:
           app-name: ${{ env.AZURE_WEBAPP_NAME }}
           resource-group-name: e2e-security-web-rg-dev
-          package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
+          package: .

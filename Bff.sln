@@ -14,6 +14,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BffMicrosoftEntraID.Server.IntegrationTests", "tests\BffMicrosoftEntraID.Server.IntegrationTests.csproj", "{4E6C76A4-2BB3-4F8F-B9EF-E0D343D4FD29}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bff.AppHost", "Bff.AppHost\Bff.AppHost.csproj", "{6E598274-A7E5-46D0-830D-1D7E1A6EE6D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bff.ServiceDefaults", "Bff.ServiceDefaults\Bff.ServiceDefaults.csproj", "{ACC89A56-401B-89DC-A5F3-24F7758825EE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,6 +32,14 @@ Global
 		{4E6C76A4-2BB3-4F8F-B9EF-E0D343D4FD29}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E6C76A4-2BB3-4F8F-B9EF-E0D343D4FD29}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E6C76A4-2BB3-4F8F-B9EF-E0D343D4FD29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E598274-A7E5-46D0-830D-1D7E1A6EE6D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E598274-A7E5-46D0-830D-1D7E1A6EE6D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E598274-A7E5-46D0-830D-1D7E1A6EE6D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E598274-A7E5-46D0-830D-1D7E1A6EE6D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACC89A56-401B-89DC-A5F3-24F7758825EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACC89A56-401B-89DC-A5F3-24F7758825EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACC89A56-401B-89DC-A5F3-24F7758825EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACC89A56-401B-89DC-A5F3-24F7758825EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

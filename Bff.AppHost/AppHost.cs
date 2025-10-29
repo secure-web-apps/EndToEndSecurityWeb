@@ -15,6 +15,7 @@ if (builder.Environment.IsDevelopment())
 }
 else
 {
+    // Hint: to make this work, the deployment pipeline must execute npm run build
     builder.AddProject<Projects.BffMicrosoftEntraID_Server>("bffmicrosoftentraid-server")
         .WithExternalHttpEndpoints();
 }

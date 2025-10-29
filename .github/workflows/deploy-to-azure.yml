@@ -114,6 +114,7 @@ jobs:
     name: Deploy to Azure App Service
     permissions:
       contents: none
+      id-token: write
     runs-on: ubuntu-latest
     needs: [build, iac_apply]
     environment:

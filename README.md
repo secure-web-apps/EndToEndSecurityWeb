@@ -74,6 +74,7 @@ nx migrate --run-migrations=migrations.json
 - 2024-10-06 Updated Angular 18.2.7, Updated security headers
 - 2025-10-27 Updated NuGet packages
 - 2025-10-28 Updated frontend packages, added integration tests, added GitHub Actions workflows
+- 2025-10-30 Fixed deployment to Azure App Service
 
 ## Links
 
@@ -87,3 +88,4 @@ nx migrate --run-migrations=migrations.json
 - [[Webinar] End-to-end security in a web application](https://community.sonarsource.com/t/webinar-end-to-end-security-in-a-web-application/115405)
 - [Tutorial: Add Aspire to an existing .NET app](https://learn.microsoft.com/en-us/dotnet/aspire/get-started/add-aspire-existing-app?WT.mc_id=MVP_344197)
 - [Orchestrate Node.js apps in Aspire](https://learn.microsoft.com/en-us/dotnet/aspire/get-started/build-aspire-apps-with-nodejs?WT.mc_id=MVP_344197)
+- [Deploy to Azure App Service by using GitHub Actions](https://learn.microsoft.com/en-us/azure/app-service/deploy-github-actions?WT.mc_id=MVP_344197)

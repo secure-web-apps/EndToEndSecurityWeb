@@ -53,12 +53,6 @@ jobs:
       - name: dotnet publish
         run: dotnet publish server/BffMicrosoftEntraID.Server.csproj -c Release -o ./temp
 
-      # - name: Create Zip
-      #   shell: pwsh
-      #   run: |
-      #     cd ./temp
-      #     zip -r ../app.zip ./*
-
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:

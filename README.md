@@ -71,10 +71,10 @@ nx migrate --run-migrations=migrations.json
 - 2025-08-30 Updated packages, Angular 20
 - 2025-01-01 .NET 9, Angular 19
 - 2024-10-17 Updated security headers performance, updated packages
-- 2024-10-06 Updated Angular 18.2.7, Updated security headers
+- 2024-10-06 Updated Angular 18.2.7, updated security headers
 - 2025-10-27 Updated NuGet packages
 - 2025-10-28 Updated frontend packages, added integration tests, added GitHub Actions workflows
-- 2025-10-30 Fixed deployment to Azure App Service
+- 2025-10-30 Fixed deployment to Azure App Service, reverted Angular due to CSP nonce issues
 
 ## Links
 

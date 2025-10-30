@@ -50,8 +50,8 @@ export class HomeComponent implements OnInit {
   }
 
   private getCurrentHost() {
-    const host = globalThis.location.host;
-    const url = `${globalThis.location.protocol}//${host}`;
+    const host = window.location.host;
+    const url = `${window.location.protocol}//${host}`;
 
     return url;
   }

@@ -4,10 +4,10 @@ export const getCookie = (cookieName: string) => {
   const ca = decodedCookie.split(";");
   for (let i = 0; i < ca.length; i += 1) {
     let c = ca[i];
-    while (c.startsWith(" ")) {
+    while (c.charAt(0) === " ") {
       c = c.substring(1);
     }
-    if (c.startsWith(name)) {
+    if (c.indexOf(name) === 0) {
       return c.substring(name.length, c.length);
     }
   }

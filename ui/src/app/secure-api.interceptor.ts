@@ -7,7 +7,7 @@ export function secureApiInterceptor(
 ) {
   const secureRoutes = [getApiUrl()];
 
-  if (!secureRoutes.some((x) => request.url.startsWith(x))) {
+  if (!secureRoutes.find((x) => request.url.startsWith(x))) {
     return next(request);
   }
 
@@ -28,7 +28,7 @@ function getApiUrl() {
 }
 
 function getCurrentHost() {
-  const host = globalThis.location.host;
-  const url = `${globalThis.location.protocol}//${host}`;
+  const host = window.location.host;
+  const url = `${window.location.protocol}//${host}`;
   return url;
 }

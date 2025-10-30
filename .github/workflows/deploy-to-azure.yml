@@ -127,6 +127,8 @@ jobs:
     steps:
       - name: Download artifact from build job
         uses: actions/download-artifact@v4
+        with:
+          name: dotnet-app
 
       - uses: azure/login@v2
         with:
@@ -140,4 +142,4 @@ jobs:
         with:
           app-name: ${{ env.AZURE_WEBAPP_NAME }}
           resource-group-name: e2e-security-web-rg-dev
-          #package: .
+          package: .

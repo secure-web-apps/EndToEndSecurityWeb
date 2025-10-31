@@ -18,6 +18,8 @@
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=secure-web-apps_EndToEndSecurityWeb&metric=sqale_rating&token=0d4ca287da2bcdd568de817048e1ff5ee611afe0)](https://sonarcloud.io/summary/overall?id=secure-web-apps_EndToEndSecurityWeb)
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=secure-web-apps_EndToEndSecurityWeb&metric=vulnerabilities&token=0d4ca287da2bcdd568de817048e1ff5ee611afe0)](https://sonarcloud.io/summary/overall?id=secure-web-apps_EndToEndSecurityWeb)
 
+Secure Web application using ASP.NET Core, Angular, SonarQube Cloud and Terraform. Furthermore .NET Aspire is used for local development.
+
 This repository hosts the source code for our .NET User Group Switzerland tour.
 
 ## Introduction
@@ -30,6 +32,21 @@ This repository hosts the source code for our .NET User Group Switzerland tour.
 
 [ASP.NET Core/Angular](https://github.com/damienbod/bff-aspnetcore-angular)
 
+### Local development
+
+For local development environment setup proceed as follows:
+
+1. Check out the repository
+1. Install Angular CLI latest globally `npm install -g @angular/cli latest`
+1. Open `Bff.sln` in Visual Studio 2022 or later
+1. Set `Bff.AppHost` as startup project
+1. Run the project (F5)
+1. Open URL of `bffmicrosoftentraid-server` from the Aspire dashboard (usually `https://localhost:5001`)
+
+![BFF development](https://github.com/secure-web-apps/EndToEndSecurityWeb/blob/main/images/images/bff-arch-development_01.drawio.png)
+
+### Production
+
 ![BFF production](https://github.com/secure-web-apps/EndToEndSecurityWeb/blob/main/images/bff-arch-production_01.drawio.png)
 
 ## Agenda
@@ -41,22 +58,21 @@ This repository hosts the source code for our .NET User Group Switzerland tour.
   - Microsoft Entra ID
     - `Microsoft.Identity.Web`
     - Microsoft Graph 5 for profile data
-    - Profile data in UI (UserController)
+    - Profile data in UI (`UserController`)
 - Secure APIs
 - Session Security
 - DevSecOps
   - [build](.github/workflows/dotnet-and-npm-build.yml)
   - [deploy (IaC & app)](.github/workflows/deploy-to-azure.yml)
   - [quality (SonarQube Cloud)](.github/workflows/quality.yml)
-  - Analysis for different technical stacks (.csproj)
-  - sonar badges, build badges
+  - Analysis for different technical stacks (`.NET`, `JavaScript/TypeScript`, `Hashicorp Terraform`)
+  - Sonar badges, GitHub Actions workflows badges
 
 ## Other topics
 
 - What's missing for a production setup?
-  - infrastructure automation (terraform/bicep)
-  - authorization
-  - data requirements
+  - Authorization
+  - Data requirements
 
 ## Angular CLI Updates
 
@@ -70,15 +86,15 @@ ng update @angular/cli @angular/core
 
 ## History
 
-- 2025-10-31 Updated to Angular CLI and Angular 20.3.0, using vite in dev
-- 2025-10-31 Updated packages, added terraform, sonar SCA, SAST, improve pipelines
-- 2025-08-30 Updated packages, Angular 20
-- 2025-01-01 .NET 9, Angular 19
+- 2024-10-06 Angular 18.2.7, updated security headers
 - 2024-10-17 Updated security headers performance, updated packages
-- 2024-10-06 Updated Angular 18.2.7, updated security headers
+- 2025-01-01 .NET 9, Angular 19
+- 2025-08-30 Angular 20, updated packages
 - 2025-10-27 Updated NuGet packages
 - 2025-10-28 Updated frontend packages, added integration tests, added GitHub Actions workflows
 - 2025-10-30 Fixed deployment to Azure App Service, reverted Angular due to CSP nonce issues
+- 2025-10-31 Updated to Angular CLI and Angular 20.3.0, using vite in dev
+- 2025-10-31 Updated packages, added terraform, sonar SCA, SAST, improved GitHub Actions workflows
 
 ## Links
 

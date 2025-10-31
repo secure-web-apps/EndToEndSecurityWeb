@@ -68,6 +68,7 @@ nx migrate --run-migrations=migrations.json
 
 ## History
 
+- 2025-10-31 Updated packages, added terraform, sonar SCA, SAST, improve pipelines
 - 2025-08-30 Updated packages, Angular 20
 - 2025-01-01 .NET 9, Angular 19
 - 2024-10-17 Updated security headers performance, updated packages

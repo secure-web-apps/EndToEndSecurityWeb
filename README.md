@@ -30,7 +30,7 @@ This repository hosts the source code for our .NET User Group Switzerland tour.
 
 [ASP.NET Core/Angular](https://github.com/damienbod/bff-aspnetcore-angular)
 
-![BFF production](https://github.com/secure-web-apps/EndToEndSecurityWeb/blob/main/images/bff-arch-production_01.png)
+![BFF production](https://github.com/secure-web-apps/EndToEndSecurityWeb/blob/main/images/bff-arch-production_01.drawio.png)
 
 ## Agenda
 
@@ -58,16 +58,19 @@ This repository hosts the source code for our .NET User Group Switzerland tour.
   - authorization
   - data requirements
 
-## Angular nx Updates
+## Angular CLI Updates
 
 ```cmd
-nx migrate latest
+npm install -g @angular/cli latest
 
-nx migrate --run-migrations=migrations.json
+ng update
+
+ng update @angular/cli @angular/core
 ```
 
 ## History
 
+- 2025-10-31 Updated to Angular CLI and Angular 20.3.0, using vite in dev
 - 2025-10-31 Updated packages, added terraform, sonar SCA, SAST, improve pipelines
 - 2025-08-30 Updated packages, Angular 20
 - 2025-01-01 .NET 9, Angular 19

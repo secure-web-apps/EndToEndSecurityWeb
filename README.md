@@ -18,6 +18,8 @@
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=secure-web-apps_EndToEndSecurityWeb&metric=sqale_rating&token=0d4ca287da2bcdd568de817048e1ff5ee611afe0)](https://sonarcloud.io/summary/overall?id=secure-web-apps_EndToEndSecurityWeb)
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=secure-web-apps_EndToEndSecurityWeb&metric=vulnerabilities&token=0d4ca287da2bcdd568de817048e1ff5ee611afe0)](https://sonarcloud.io/summary/overall?id=secure-web-apps_EndToEndSecurityWeb)
 
+Secure Web application using ASP.NET Core, Angular, SonarQube Cloud and Terraform. Furthermore .NET Aspire is used for local development.
+
 This repository hosts the source code for our .NET User Group Switzerland tour.
 
 ## Introduction

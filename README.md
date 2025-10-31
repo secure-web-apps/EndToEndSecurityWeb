@@ -32,6 +32,12 @@ This repository hosts the source code for our .NET User Group Switzerland tour.
 
 [ASP.NET Core/Angular](https://github.com/damienbod/bff-aspnetcore-angular)
 
+### Local development
+
+![BFF development](https://github.com/secure-web-apps/EndToEndSecurityWeb/blob/main/images/images/bff-arch-development_01.drawio.png)
+
+### Production
+
 ![BFF production](https://github.com/secure-web-apps/EndToEndSecurityWeb/blob/main/images/bff-arch-production_01.drawio.png)
 
 ## Agenda

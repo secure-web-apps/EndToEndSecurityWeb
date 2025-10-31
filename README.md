@@ -49,22 +49,21 @@ This repository hosts the source code for our .NET User Group Switzerland tour.
   - Microsoft Entra ID
     - `Microsoft.Identity.Web`
     - Microsoft Graph 5 for profile data
-    - Profile data in UI (UserController)
+    - Profile data in UI (`UserController`)
 - Secure APIs
 - Session Security
 - DevSecOps
   - [build](.github/workflows/dotnet-and-npm-build.yml)
   - [deploy (IaC & app)](.github/workflows/deploy-to-azure.yml)
   - [quality (SonarQube Cloud)](.github/workflows/quality.yml)
-  - Analysis for different technical stacks (.csproj)
-  - sonar badges, build badges
+  - Analysis for different technical stacks (`.NET`, `JavaScript/TypeScript`, `Hashicorp Terraform`)
+  - Sonar badges, GitHub Actions workflows badges
 
 ## Other topics
 
 - What's missing for a production setup?
-  - infrastructure automation (terraform/bicep)
-  - authorization
-  - data requirements
+  - Authorization
+  - Data requirements
 
 ## Angular CLI Updates
 
@@ -78,15 +77,15 @@ ng update @angular/cli @angular/core
 
 ## History
 
-- 2025-10-31 Updated to Angular CLI and Angular 20.3.0, using vite in dev
-- 2025-10-31 Updated packages, added terraform, sonar SCA, SAST, improve pipelines
-- 2025-08-30 Updated packages, Angular 20
-- 2025-01-01 .NET 9, Angular 19
+- 2024-10-06 Angular 18.2.7, updated security headers
 - 2024-10-17 Updated security headers performance, updated packages
-- 2024-10-06 Updated Angular 18.2.7, updated security headers
+- 2025-01-01 .NET 9, Angular 19
+- 2025-08-30 Angular 20, updated packages
 - 2025-10-27 Updated NuGet packages
 - 2025-10-28 Updated frontend packages, added integration tests, added GitHub Actions workflows
 - 2025-10-30 Fixed deployment to Azure App Service, reverted Angular due to CSP nonce issues
+- 2025-10-31 Updated to Angular CLI and Angular 20.3.0, using vite in dev
+- 2025-10-31 Updated packages, added terraform, sonar SCA, SAST, improved GitHub Actions workflows
 
 ## Links
 

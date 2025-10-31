@@ -34,6 +34,15 @@ This repository hosts the source code for our .NET User Group Switzerland tour.
 
 ### Local development
 
+For local development environment setup proceed as follows:
+
+1. Check out the repository
+1. Install Angular CLI latest globally `npm install -g @angular/cli latest`
+1. Open `Bff.sln` in Visual Studio 2022 or later
+1. Set `Bff.AppHost` as startup project
+1. Run the project (F5)
+1. Open URL of `bffmicrosoftentraid-server` from the Aspire dashboard (usually `https://localhost:5001`)
+
 ![BFF development](https://github.com/secure-web-apps/EndToEndSecurityWeb/blob/main/images/images/bff-arch-development_01.drawio.png)
 
 ### Production

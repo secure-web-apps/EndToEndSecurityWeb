@@ -73,6 +73,7 @@ For local development environment setup proceed as follows:
 - What's missing for a production setup?
   - Authorization
   - Data requirements
+  - Update of `ui\public\.well-known\security.txt`
 
 ## Angular CLI Updates
 

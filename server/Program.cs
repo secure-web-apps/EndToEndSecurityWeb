@@ -11,6 +11,8 @@ builder.WebHost.ConfigureKestrel(serverOptions =>
     serverOptions.AddServerHeader = false;
 });
 
+builder.Services.AddOpenApi();
+
 var services = builder.Services;
 var configuration = builder.Configuration;
 
@@ -77,6 +79,7 @@ if (app.Environment.IsDevelopment())
 
     app.UseDeveloperExceptionPage();
     app.UseWebAssemblyDebugging();
+    app.MapOpenApi();
 }
 else
 {

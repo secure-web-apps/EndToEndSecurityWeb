@@ -73,6 +73,8 @@ For local development environment setup proceed as follows:
 - What's missing for a production setup?
   - Authorization
   - Data requirements
+  - Update of `ui\public\.well-known\security.txt`
+  - Make use of Azure Key Vault for secrets management
 
 ## Angular CLI Updates
 
@@ -86,15 +88,15 @@ ng update @angular/cli @angular/core
 
 ## History
 
-- 2024-10-06 Angular 18.2.7, updated security headers
-- 2024-10-17 Updated security headers performance, updated packages
-- 2025-01-01 .NET 9, Angular 19
-- 2025-08-30 Angular 20, updated packages
-- 2025-10-27 Updated NuGet packages
-- 2025-10-28 Updated frontend packages, added integration tests, added GitHub Actions workflows
-- 2025-10-30 Fixed deployment to Azure App Service, reverted Angular due to CSP nonce issues
 - 2025-10-31 Updated to Angular CLI and Angular 20.3.0, using vite in dev
-- 2025-10-31 Updated packages, added terraform, sonar SCA, SAST, improved GitHub Actions workflows
+- 2025-10-30 Fixed deployment to Azure App Service, reverted Angular due to CSP nonce issues
+- 2025-10-29 Added terraform, sonar SCA, SAST, improved GitHub Actions workflows
+- 2025-10-28 Updated frontend packages, added integration tests, added GitHub Actions workflows
+- 2025-10-27 Updated NuGet packages
+- 2025-08-30 Angular 20, updated packages
+- 2025-01-01 .NET 9, Angular 19
+- 2024-10-17 Updated security headers performance, updated packages
+- 2024-10-06 Angular 18.2.7, updated security headers
 
 ## Links
 

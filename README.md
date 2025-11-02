@@ -74,6 +74,7 @@ For local development environment setup proceed as follows:
   - Authorization
   - Data requirements
   - Update of `ui\public\.well-known\security.txt`
+  - Make use of Azure Key Vault for secrets management
 
 ## Angular CLI Updates
 

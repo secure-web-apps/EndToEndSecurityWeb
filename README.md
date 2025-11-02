@@ -43,7 +43,7 @@ For local development environment setup proceed as follows:
 1. Run the project (F5)
 1. Open URL of `bffmicrosoftentraid-server` from the Aspire dashboard (usually `https://localhost:5001`)
 
-![BFF development](https://github.com/secure-web-apps/EndToEndSecurityWeb/blob/main/images/images/bff-arch-development_01.drawio.png)
+![BFF development](https://github.com/secure-web-apps/EndToEndSecurityWeb/blob/main/images/bff-arch-development_01.drawio.png)
 
 ### Production
 

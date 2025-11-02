@@ -5,6 +5,10 @@ on:
     branches: ["main"]
   workflow_dispatch:
 
+concurrency:
+  group: deploy-to-azure
+  cancel-in-progress: false
+
 permissions:
   id-token: write
   contents: read

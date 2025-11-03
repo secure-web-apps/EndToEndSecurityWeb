@@ -18,6 +18,12 @@
       (userProfileClaims?.isAuthenticated) {
       <form method="post" action="api/Account/Logout">
         <button class="btn btn-outline btn-danger" type="submit">Sign out</button>
+        <input
+          type="hidden"
+          id="__RequestVerificationToken"
+          name="__RequestVerificationToken"
+          [value]="getXsrfToken()"
+        />
       </form>
       } @else {
       <a class="btn btn-outline-success btn-outline" href="api/Account/Login">Log in</a>

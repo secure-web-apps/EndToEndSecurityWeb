@@ -62,7 +62,7 @@ jobs:
         with:
           name: dotnet-app
           path: ./temp
-          include-hidden-files: true
+          include-hidden-files: true # otherwise .well-known folder is not included
 
   iac_plan:
     name: IaC (Terraform) Plan

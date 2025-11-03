@@ -2,7 +2,8 @@ export const getCookie = (cookieName: string) => {
   const name = `${cookieName}=`;
   const decodedCookie = decodeURIComponent(document.cookie);
   const ca = decodedCookie.split(";");
-  for (let c of ca) {
+  for (let i of ca) {
+    let c = i;
     while (c.startsWith(" ")) {
       c = c.substring(1);
     }

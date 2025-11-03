@@ -61,7 +61,9 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: dotnet-app
-          path: ./temp/**/*
+          path: |
+            ./temp
+            ./temp/wwwroot/.well-known
 
   iac_plan:
     name: IaC (Terraform) Plan

@@ -88,10 +88,12 @@ ng update @angular/cli @angular/core
 
 ## History
 
+- 2025-11-02 Added bootstrap, improved UI (style), created app registration for BFF app using terraform
+- 2025-11-01 Added security.txt, added OpenAPI
 - 2025-10-31 Updated to Angular CLI and Angular 20.3.0, using vite in dev
 - 2025-10-30 Fixed deployment to Azure App Service, reverted Angular due to CSP nonce issues
-- 2025-10-29 Added terraform, sonar SCA, SAST, improved GitHub Actions workflows
-- 2025-10-28 Updated frontend packages, added integration tests, added GitHub Actions workflows
+- 2025-10-29 Added .NET Aspire, added terraform, Sonar SCA, SAST, improved GitHub Actions workflows
+- 2025-10-28 Improved security headers, updated frontend packages, added integration tests, added GitHub Actions workflows
 - 2025-10-27 Updated NuGet packages
 - 2025-08-30 Angular 20, updated packages
 - 2025-01-01 .NET 9, Angular 19

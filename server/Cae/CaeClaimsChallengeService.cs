@@ -10,7 +10,7 @@
 /// 
 /// This class is only required if using a standalone AuthContext check
 /// </summary>
-public class CaeClaimsChallengeService
+public static class CaeClaimsChallengeService
 {
     public static string? CheckForRequiredAuthContextIdToken(string authContextId, HttpContext context)
     {

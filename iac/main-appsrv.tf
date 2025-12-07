@@ -16,7 +16,7 @@ resource "azurerm_linux_web_app" "appsrv" {
   https_only          = true
   site_config {
     application_stack {
-      dotnet_version = "9.0"
+      dotnet_version = "10.0"
     }
     http2_enabled = true
     always_on     = false

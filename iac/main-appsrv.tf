@@ -33,11 +33,6 @@ resource "azurerm_linux_web_app" "appsrv" {
       "MicrosoftEntraID__ClientSecret" = azuread_application_password.aadapppwd.value
     }
   )
-  lifecycle {
-    ignore_changes = [
-      site_config["application_stack"]
-    ]
-  }
 }
 
 # Azure App Service custom domain and SSL certificate

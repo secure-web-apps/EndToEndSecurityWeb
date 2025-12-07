@@ -88,7 +88,7 @@ ng update @angular/cli @angular/core
 
 ## History
 
-- 2025-12-07 Updated to Angular 21
+- 2025-12-07 Updated to .NET 10 and Angular 21
 - 2025-11-02 Added bootstrap, improved UI (style), created app registration for BFF app using terraform
 - 2025-11-01 Added security.txt, added OpenAPI
 - 2025-10-31 Updated to Angular CLI and Angular 20.3.0, using vite in dev

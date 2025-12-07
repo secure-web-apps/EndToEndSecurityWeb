@@ -16,7 +16,7 @@ permissions:
 env:
   AZURE_WEBAPP_NAME: e2e-security-web-appsrv-dev # set this to the name of your Azure App Service
   AZURE_WEBAPP_PACKAGE_PATH: "."
-  DOTNET_VERSION: "9.0.x" # set this to the .NET Core version to use
+  DOTNET_VERSION: "10.0.x" # set this to the .NET Core version to use
   TERRAFORM_ROOT_DIRECTORY: "./iac"
   TERRAFORM_VERSION: "1.13.3"
 

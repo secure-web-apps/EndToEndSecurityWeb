@@ -88,6 +88,7 @@ ng update @angular/cli @angular/core
 
 ## History
 
+- 2026-03-18 Updated .NET Aspire to 13.1.2, update xunit to xunit.v3, Moved permissions from workflow level to job level
 - 2026-03-14 Updated Nuget packages
 - 2026-02-24 Updated Nuget packages, Angular 21
 - 2025-12-07 Updated to .NET 10 and Angular 21

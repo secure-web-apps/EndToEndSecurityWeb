@@ -19,11 +19,11 @@ public class UserEndpointsTests : IClassFixture<WebApplicationFactory<Program>>
         var client = _factory.CreateClient();
 
         // Act
-        var response = await client.GetAsync("/api/user");
+        var response = await client.GetAsync("/api/user", TestContext.Current.CancellationToken);
 
         // Assert
         response.EnsureSuccessStatusCode();
-        var userInfo = await response.Content.ReadFromJsonAsync<Models.UserInfo>();
+        var userInfo = await response.Content.ReadFromJsonAsync<Models.UserInfo>(cancellationToken: TestContext.Current.CancellationToken);
         Assert.NotNull(userInfo);
         Assert.False(userInfo!.IsAuthenticated);
     }

@@ -34,14 +34,20 @@ public static class DefaultSecurityHeadersDefinitions
 
                 if (isDev)
                 {
-                    builder.AddStyleSrc().Self().UnsafeInline();
+                    builder.AddStyleSrc()
+                        .Self()
+                        .UnsafeInline();
                 }
                 else
                 {
-                    builder.AddStyleSrc().WithNonce().UnsafeInline();
+                    builder.AddStyleSrc()
+                        .WithNonce()
+                        .UnsafeInline();
                 }
 
-                builder.AddScriptSrc().WithNonce().UnsafeInline();
+                builder.AddScriptSrc()
+                    .WithNonce()
+                    .UnsafeInline(); // for browser backward compatibility
             })
             .RemoveServerHeader()
             .AddPermissionsPolicyWithDefaultSecureDirectives();

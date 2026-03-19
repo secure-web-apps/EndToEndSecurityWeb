@@ -9,6 +9,9 @@ concurrency:
   group: deploy-to-azure
   cancel-in-progress: false
 
+permissions:
+  id-token: write
+
 env:
   AZURE_WEBAPP_NAME: e2e-security-web-appsrv-dev # set this to the name of your Azure App Service
   AZURE_WEBAPP_PACKAGE_PATH: "."
@@ -22,7 +25,6 @@ jobs:
 
     permissions:
       contents: read
-      id-token: write
 
     steps:
       - uses: actions/checkout@v4

@@ -31,7 +31,7 @@ public class AccountController : ControllerBase
     [HttpPost("Logout")]
     public IActionResult Logout()
     {
-        Response.Headers.Append("Clear-Site-Data", "\"cache\", \"cookies\",\"executionContexts\"");
+        Response.Headers.Append("Clear-Site-Data", "\"cache\", \"cookies\"");
         return SignOut(
             new AuthenticationProperties { RedirectUri = "/" },
             CookieAuthenticationDefaults.AuthenticationScheme,

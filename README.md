@@ -38,7 +38,7 @@ For local development environment setup proceed as follows:
 
 1. Check out the repository
 1. Install Angular CLI latest globally `npm install -g @angular/cli latest`
-1. Open `Bff.sln` in Visual Studio 2022 or later
+1. Open `Bff.sln` in Visual Studio 2026 or later
 1. Set `Bff.AppHost` as startup project
 1. Run the project (F5)
 1. Open URL of `bffmicrosoftentraid-server` from the Aspire dashboard (usually `https://localhost:5001`)
@@ -88,6 +88,7 @@ ng update @angular/cli @angular/core
 
 ## History
 
+- 2026-06-24 Updated NuGet packages, added new security headers
 - 2026-05-16 Updated NuGet packages, updated Angular to 21.2.0
 - 2026-03-18 Updated .NET Aspire to 13.1.2, updated xunit to xunit.v3, moved permissions from workflow level to job level, updated npm packages
 - 2026-03-14 Updated Nuget packages

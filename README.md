@@ -88,6 +88,7 @@ ng update @angular/cli @angular/core
 
 ## History
 
+- 2026-10-18 Updated NuGet packages, updated Aspire
 - 2026-09-30 Updated NuGet packages, update Aspire
 - 2026-06-24 Updated NuGet packages, added new security headers
 - 2026-05-16 Updated NuGet packages, updated Angular to 21.2.0

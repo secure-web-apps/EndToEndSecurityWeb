@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".github/workflows/deploy-to-azure.yml" />
+    <File Path=".github/workflows/dotnet-and-npm-build.yml" />
+    <File Path=".github/workflows/quality.yml" />
+    <File Path="README.md" />
+  </Folder>
+  <Project Path="Bff.AppHost/Bff.AppHost.csproj" />
+  <Project Path="Bff.ServiceDefaults/Bff.ServiceDefaults.csproj" />
+  <Project Path="server/BffMicrosoftEntraID.Server.csproj" />
+  <Project Path="tests/BffMicrosoftEntraID.Server.IntegrationTests.csproj" />
+</Solution>

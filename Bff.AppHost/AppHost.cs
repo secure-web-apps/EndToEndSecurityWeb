@@ -7,7 +7,7 @@ if (builder.Environment.IsDevelopment())
     var angularFrontend = builder.AddJavaScriptApp("angular", "../ui", "start")
         .WithHttpsEndpoint(port: 3000, 4201, env: "BASE_URL");
 
-    builder.AddProject<Projects.BffMicrosoftEntraID_Server>("bffmicrosoftentraid-server")
+    builder.AddDotnetProject("bffmicrosoftentraid-server", "../server/BffMicrosoftEntraID.Server.csproj")
         .WithReference(angularFrontend)
         .WaitFor(angularFrontend)
         .WithExternalHttpEndpoints();
@@ -15,7 +15,7 @@ if (builder.Environment.IsDevelopment())
 else
 {
     // Hint: to make this work, the deployment pipeline must execute npm run build
-    builder.AddProject<Projects.BffMicrosoftEntraID_Server>("bffmicrosoftentraid-server")
+    builder.AddDotnetProject("bffmicrosoftentraid-server", "../server/BffMicrosoftEntraID.Server.csproj")
         .WithExternalHttpEndpoints();
 }
 

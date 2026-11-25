@@ -77,7 +77,6 @@ if (app.Environment.IsDevelopment())
     IdentityModelEventSource.ShowPII = true;
 
     app.UseDeveloperExceptionPage();
-    app.UseWebAssemblyDebugging();
     app.MapOpenApi();
 }
 else

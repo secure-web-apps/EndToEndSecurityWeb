@@ -1,4 +1,3 @@
-
 # OpenID Connect identity provider samples
 
 Examples of different OpenID Connect identity providers using this solution

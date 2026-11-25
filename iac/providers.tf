@@ -7,7 +7,8 @@ provider "azurerm" {
     "Microsoft.Compute",
     "Microsoft.Network",
     "Microsoft.Storage",
-    "Microsoft.ManagedIdentity"
+    "Microsoft.ManagedIdentity",
+    "Microsoft.Web"
   ]
   features {}
 }

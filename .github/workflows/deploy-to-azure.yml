@@ -17,7 +17,7 @@ env:
   AZURE_WEBAPP_PACKAGE_PATH: "."
   DOTNET_VERSION: "11.0.x" # set this to the .NET Core version to use
   TERRAFORM_ROOT_DIRECTORY: "./iac"
-  TERRAFORM_VERSION: "1.13.3"
+  TERRAFORM_VERSION: "1.17.2"
 
 jobs:
   build:

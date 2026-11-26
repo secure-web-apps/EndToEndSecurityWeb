@@ -30,6 +30,7 @@ resource "azurerm_linux_web_app" "appsrv" {
       "MicrosoftEntraID__Domain"       = data.azuread_domains.aad_domains.domains[0].domain_name
       "MicrosoftEntraID__TenantId"     = var.tenant_id
       "MicrosoftEntraID__ClientId"     = azuread_application.aadapp.client_id
+      # IMPORTANT: simplified for demo / template purposes only. Must be moved to Azure Key Vault when used in production scenarios
       "MicrosoftEntraID__ClientSecret" = azuread_application_password.aadapppwd.value
     }
   )
